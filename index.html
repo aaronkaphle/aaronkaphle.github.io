@@ -4,35 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaphle - Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- CSS file link -->
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1c1c1c;
+            color: #eaeaea;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(45deg, #444, #111);
+            color: #eaeaea;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #2c2c2c;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #ffa500;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #ffa500;
+            padding-bottom: 0.5rem;
+        }
+
+        p, ul {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #ffa500;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #eaeaea;
+        }
+
+        .neon-border {
+            border: 2px solid #ffa500;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ffa500;
+        }
+
+        .footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Aaron Kaphle</h1>
-        <p>Engineer</p>
     </header>
 
     <div class="container">
         <h2>About Me</h2>
-        <p>
-            lorem ipsum
+        <p class="neon-border">
+            Welcome to my portfolio. Inspired by futuristic aesthetics, my projects embody innovation and creativity.
         </p>
 
         <h2>Projects</h2>
-        <ul>
-            <li>
-                <a href="#">Project 1</a> - N/A.
-            </li>
-            <li>
-                <a href="#">Project 2</a> - N/A.
-            </li>
-            <!-- Add more projects as needed -->
+        <ul class="neon-border">
+            <li><a href="#">Cybernetic Enhancements Project</a> - Exploring the intersection of biology and technology.</li>
+            <li><a href="#">Augmented Reality Interface</a> - A next-gen interface for immersive AR experiences.</li>
         </ul>
 
         <h2>Contact</h2>
-        <p>Email: kaphleaaron@gmail.com</p>
-        <p>Phone: N/A</p>
+        <p class="neon-border">Email: kaphleaaron@gmail.com</p>
     </div>
-</body>
 
+    <footer class="footer">
+        &copy; 2024 Aaron Kaphle. Inspired by Deus Ex: Mankind Divided.
+    </footer>
+</body>
 </html>
